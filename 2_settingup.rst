@@ -64,6 +64,12 @@ Once the HTML file is written, you can view it in a web browser.  You can do thi
 
      open -a /Applications/Google\ Chrome.app/ userinfo_lulu.html
 
+In Windows, go to the folder with userinfo_lulu.html file and run
+
+```
+userinfo_lulu.html
+```
+
 For funsies, you can try entering data to the form, then clicking on Submit.  You might get an error that looks like this::
 
     No webpage was found for the web address: file://localhost/Users/administrator/MyFlaskTutorial/templates/index_lulu
