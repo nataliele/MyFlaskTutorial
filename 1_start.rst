@@ -66,9 +66,24 @@ Open a file called hello_lulu.py.  Type the following::
     if __name__ == '__main__':
         app_lulu.run(debug=True)
 
+
 Now, run the code from command line using::
 
-    >> python hello_lulu.py
+    >> py hello_lulu.py
+
+
+
+**Another way to run the file from flask's [quickstart page](http://flask.pocoo.org/docs/1.0/quickstart/#debug-mode):
+From the command line, we have to change the directory to where the hello_lulu.py file is and set the `FLASK_APP` environment variable. Set the `FLASK_ENV` variable to development change the Environment from Production to Development.
+```
+> cd [your folder]
+> set FLASK_APP=hello_lulu.py
+> set FLASK_ENV=development
+> flask run
+```
+**
+
+
 
 Running this code will start a server at: 127.0.0.1:5000/hello_page_lulu.  If you 
 visit that address in a browser window, you should see a blank screen with 
