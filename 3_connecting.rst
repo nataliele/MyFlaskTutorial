@@ -92,12 +92,7 @@ Open and edit the file ``~/MyFlaskTutorial/templates/userinfo_lulu.html``::
         
 Isn't that awesome?  We can pass variables from our backend to the rendered HTML page.  
 
-While we're here, take a look at the option called ``action`` in the ``form`` tag.  Do you remember 
-the error we got when we tried to click Submit?  It told us it couldn't find a page called ``index_lulu``,
-right?  Here's where we told it to look.  If you change this to ``index_tutu``, the error will say::
-   
-    No webpage was found for the web address: file://localhost/Users/administrator/MyFlaskTutorial/templates/index_tutu
-    Error 6 (net::ERR_FILE_NOT_FOUND): The file or directory could not be found.
+While we're here, take a look at the option called ``action`` in the ``form`` tag.
 
 Where is it looking for this file?  It's actually looking in application_lulu.py, trying to find a URL
 among the arguments to the ``@app_lulu.route()`` decorators.  If the URL is found, it will carry out the
